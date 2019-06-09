@@ -48,7 +48,7 @@ ggplot(df, aes(yearmonth, sales, group = 1)) +
                color = "#bababa", size = 0.1) +
   # caption
   geom_text(aes(x = 13, y = -0.5,
-                label = "The 2019 forecast is provided by ABC consultants\nand is based on market data through June. The forecast\nassumes no major market changes."),
+                label = "The 2019 forecast is provided by ABC consultants\nand is based on market data through June. The forecast\nassumes no major market changes.\nGraphic: Georgios Karamanis"),
             family = "SF Pro Display", color = "#999999", size = 2) +
   # stuff
   scale_color_grey(guide = FALSE) +

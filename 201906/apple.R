@@ -59,5 +59,5 @@ ggplot(df, aes(yearmonth, sales, group = 1)) +
     plot.margin=unit(c(1, 1, 0, 1),"cm")
   )
 
-ggsave("./201906/apple.png", height = 5, width = 5)
+ggsave("./201906/apple.png", dpi = 600, height = 5, width = 5)
 # add disclaimer fake data

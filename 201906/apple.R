@@ -12,7 +12,7 @@ ggplot(df, aes(yearmonth, sales, group = 1)) +
   geom_path(aes(color = type)) +
   # logo
   geom_image(aes(x = 13, y = 3.7,
-             image = "./201906/logo.png"), asp = 1) +
+             image = "./201906/logo.png"), asp = 0.9) +
   # title
   geom_text(aes(x = 13, y = 4.4, label = "Market size over time"),
             family = "SF Pro Display Heavy", 

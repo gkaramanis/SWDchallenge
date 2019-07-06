@@ -12,7 +12,7 @@ ggplot(df, aes(yearmonth, sales, group = 1)) +
   geom_path(aes(color = type)) +
   # logo
   geom_image(aes(x = 13, y = 3.7,
-             image = "./201906/logo.png"), asp = 1) +
+             image = "./201906/logo.png"), asp = 0.9) +
   # title
   geom_text(aes(x = 13, y = 4.4, label = "Market size over time"),
             family = "SF Pro Display Heavy", 
@@ -48,7 +48,7 @@ ggplot(df, aes(yearmonth, sales, group = 1)) +
                color = "#bababa", size = 0.1) +
   # caption
   geom_text(aes(x = 13, y = -0.5,
-                label = "The 2019 forecast is provided by ABC consultants\nand is based on market data through June. The forecast\nassumes no major market changes."),
+                label = "The 2019 forecast is provided by ABC consultants\nand is based on market data through June. The forecast\nassumes no major market changes.\nGraphic: Georgios Karamanis"),
             family = "SF Pro Display", color = "#999999", size = 2) +
   # stuff
   scale_color_grey(guide = FALSE) +
@@ -59,5 +59,5 @@ ggplot(df, aes(yearmonth, sales, group = 1)) +
     plot.margin=unit(c(1, 1, 0, 1),"cm")
   )
 
-ggsave("./201906/apple.png", height = 5, width = 5)
+ggsave("./201906/apple.png", dpi = 600, height = 5, width = 5)
 # add disclaimer fake data

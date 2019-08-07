@@ -1,0 +1,13 @@
+@import url("//fonts.googleapis.com/css?family=Space+Mono");
+
+h3 {
+  font-family: 'Space Mono', Monaco, monospace;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  background-color: #fff5ba;
+  font-family: 'Space Mono', Monaco, monospace;
+  color: black
+}

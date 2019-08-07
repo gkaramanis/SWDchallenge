@@ -26,11 +26,11 @@ nobel_winners %>%
   ) +
   scale_fill_brewer(palette = "Purples") +
   coord_polar("y") +
-  facet_wrap(~ prize_year, ncol = 2,
+  facet_wrap(~ prize_year, ncol = 10,
              labeller = labeller(decade = decadesLabels)) +
-  labs(title = paste("Shared Nobel Prizes in ", filterCategory, sep = ""),
-       subtitle = "by decade and year, 1901-2016",
-       caption = "Source: Kaggle | Graphic: Georgios Karamanis") +
+  # labs(title = paste("Shared Nobel Prizes in ", filterCategory, sep = ""),
+  #      subtitle = "by decade and year, 1901-2016",
+  #      caption = "Source: Kaggle | Graphic: Georgios Karamanis") +
   theme_void() +
   theme(
     plot.background = element_rect(fill = "grey80")

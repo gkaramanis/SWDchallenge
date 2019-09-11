@@ -1,0 +1,11 @@
+variable_group,variable,label,mean,sd,ci1,ci2
+1,age_inj,**Age (years)**<br>ankle injured,25.2,6.6,12.1,38.1
+1,age_ctrl,control group,28.0,7.7,12.9,43.1
+2,games_week_inj,**Games played a week**<br>ankle injured,1.9,1.0,-0.6,3.9,
+2,games_week_ctrl,control group,1.9,0.9,0.1,3.7
+3,training_ week_inj,**Training sessions a week**<br>ankle injured,1.0,1.4,-1.7,3.7,
+3,training_ week_ctrl,control group,1.2,1.5,-1.7,4.1
+4,weight_inj,**Weight (kg)**<br>ankle injured,70.5,14.4,42.3,98.7,
+4,weight_ctrl,control group,71.0,13.1,45.3,96.7
+5,height_inj,**Height (cm)**<br>ankle injured,174.6,12.4,150.3,198.9,
+5,height_ctrl,control group,175.0,11.0,153.4,196.6

@@ -1,0 +1,6 @@
+variable_group,variable,label,odds_ratio,p_value,ci1,ci2
+1,injury_history,History of ankle injury,4.94,<0.001,1.95,12.48
+2,air_cells,Air cells in shoes,4.34,0.01,1.51,12.40
+3,stretching,Stretching (warm up),2.62,0.03,1.01,6.34
+4,age1,Age<br><25 years and 25–34 years,0.62,0.30,0.25,1.53
+5,age2,<25 years and 25–34 years,0.17,0.10,0.02,1.37

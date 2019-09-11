@@ -1,0 +1,12 @@
+name: media_franchises
+title: media_franchises
+username:
+account: karamanis
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1071960
+bundleId: 2297778
+url: https://karamanis.shinyapps.io/media_franchises/
+when: 1565170110.87846
+asMultiple: FALSE
+asStatic: FALSE

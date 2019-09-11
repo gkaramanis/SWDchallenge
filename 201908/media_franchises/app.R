@@ -14,10 +14,8 @@ media_franchises <- media_franchises %>%
 
 ui <- fluidPage(
     includeCSS("styles.css"),
-    
     verticalLayout(
-        mainPanel(
-            h3("Media Franchises Powerhouses"),
+            h4("Media Franchises Powerhouses"),
             h5("Different revenue streams as percentage of the total revenue.\nThe outer ring shows the largest revenue stream (full circle is 100%)"),
             selectInput("franchiseInput", "Select franchise:",
                         choices = media_franchises$franchise,
@@ -25,13 +23,13 @@ ui <- fluidPage(
                         width = "100%"),
             plotOutput("percPlot", height = "300px"),
             tableOutput("percTable")
-        )
     )
 )
 server <- function(input, output) {
     output$percPlot <- renderPlot({
         media_franchises %>% filter(franchise == input$franchiseInput) %>% 
         ggplot() +
+            # width affects only first bar, throws error
             geom_col(aes(x = order, y = revenue_perc,
                          fill = revenue_category), width = 3) +
             scale_x_reverse() +
@@ -42,7 +40,8 @@ server <- function(input, output) {
             theme_void() +
             theme(
                 legend.position = "none",
-                plot.background = element_rect(fill = "#fff5ba", color = "#fff5ba")
+                plot.background = element_rect(fill = "#fffced",
+                                               color = "#fffced")
             )
     }, bg="transparent")
     

@@ -1,13 +1,32 @@
 @import url("//fonts.googleapis.com/css?family=Space+Mono");
 
-h3 {
+h4 {
   font-family: 'Space Mono', Monaco, monospace;
   font-weight: bold;
   text-align: center;
 }
 
 body {
-  background-color: #fff5ba;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffced;
   font-family: 'Space Mono', Monaco, monospace;
-  color: black
+  color: black;
+  font-size: 12px;
+}
+
+
+
+.table>tbody>tr>td {
+    border: 0;
+}
+
+.table>thead>tr>th {
+    border: 0;
+}
+
+.shiny-table.spacing-s > tbody > tr > td {
+      padding-top: 1px;
+      padding-bottom: 1px;
 }

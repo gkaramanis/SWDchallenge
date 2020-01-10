@@ -30,12 +30,7 @@ gglist <- list(
 )
 
 # title
-title <- ggplot() +
-  labs(title = "Comparison of tiers by") +
-  gglist +
-  theme(
-    plot.title = element_text(size = 22, hjust = 0.5, color = "grey30", margin = margin(10, 0, 0, 0))
-  )
+title <- ggdraw() + draw_label("Comparison of tiers by:", fontfamily = "IBM Plex Sans", size = 19, colour = "grey40", hjust = 0)
 
 # accounts treemap
 p_acc <- ggplot(clients, aes(area = number_of_accounts, fill = tier, label = tier)) +
